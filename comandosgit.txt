@@ -26,3 +26,72 @@ git remoto add origin https://github.com/roberto-web-utn/2026_UTN_PW_TN_MAR_JUE_
 
 git remote set-url origin <direccion del repositorio>
 es para modificar a una nueva direccion nuestra de la nube
+
+
+Comandos git:
+
+ 
+
+git status
+
+    Da un estatus del repositorio
+
+    Es como preguntarle a tu asesor financiero. Todo esta bien? o Como anda todo?
+
+ 
+
+Pasos para crear un repositorio:
+
+ 
+
+git init
+
+    Crea un repositorio de git en el proyecto donde se ejecute
+
+ 
+
+git add . 
+
+    Añade los archivos sin seguimiento al respositorio de git
+
+ 
+
+git commit -m 'mensaje descriptivo'
+
+    Versionar los cambios añadidos
+
+ 
+
+git branch -M main 
+
+    Renombrar la rama principal
+
+ 
+
+git remote add origin https://github.com/Matu-Dev-JS/2026_UTN_PWI_TN_MAR_JUE_PRIMER_REPOSITORIO.git
+
+    Añadir una direccion remota (Direccion de repositorio remoto) a nuestro repositorio local
+
+ 
+
+git remote -v
+
+    Verificar la direccion remota a la que esta conectado nuestro repositorio local
+
+ 
+
+git remote set-url origin <direccion del repositorio en la nube>
+
+    Modificar la direccion remota de nuestro repositorio en la nube
+
+ 
+
+ 
+
+Para actualizar un repositorio y subir otro commit
+
+    git add .
+
+    git commit -m 'mensaje'
+
+    git push
