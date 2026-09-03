@@ -1,22 +1,3 @@
-git init 
-
-
-git add .
-
-git commit
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 git remoto add origin https://github.com/roberto-web-utn/2026_UTN_PW_TN_MAR_JUE_PRIMER_REPOSITORIO.git
 
