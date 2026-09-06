@@ -1,0 +1,113 @@
+desde la terminal (CTRL J), 
+
+pwd es para saber la ubicación / ruta de donde estoy al momento.
+
+git funciona en una terminal, a traves de lineas de comandos
+
+creo el repositorio en la misma carpeta del proyecto con:
+git init
+
+git add . el punto es para que tome dominio en todos los archivos de la carpeta clase 2-comandos-git
+
+y git cambia la U de untracker por la A de ahora les hago seguimiento. aunque no guardó nada, hasta el 
+
+comando: git commit -m "mi primer commit de..."
+
+por cada vez que creo un archivo nuevo en la columna izquierda, me aparece la U, y debo hacer un git add . para que tenga seguimiento,
+es decir lo Añadimos. 
+Si aparece la letra M nos git nos avisa que fue modificado y que no tiene seguimiento actual, debo hacer git add . y cambia de M a a
+siempre usar git add . para poder commitear los archivos
+
+
+git log --oneline  ES PARA LISTAR TODOS LOS GIT COMMIT con identificacion y descripcion
+
+
+git remoto add origin https://github.com/roberto-web-utn/2026_UTN_PW_TN_MAR_JUE_PRIMER_REPOSITORIO.git
+
+
+git remote set-url origin <direccion del repositorio>
+es para modificar a una nueva direccion nuestra de la nube
+
+
+Comandos git:
+
+la primera vez al repo de la nube
+desde la terminal desde bash
+git add .
+git commit -m "Mi primer commit"
+git push -u origin main
+
+A partir de la segunda vez para el repo de la nube cambia, 
+desde la terminal desde bash
+git add .
+git commit -m "Otro cambio más"
+git push
+
+ 
+
+git status
+
+    Da un estatus del repositorio
+
+    Es como preguntarle a tu asesor financiero. Todo esta bien? o Como anda todo?
+
+ 
+
+Pasos para crear un repositorio:
+
+ 
+
+git init
+
+    Crea un repositorio de git en el proyecto donde se ejecute
+
+ 
+
+git add . 
+
+    Añade los archivos sin seguimiento al respositorio de git
+
+ 
+
+git commit -m 'mensaje descriptivo' es un disparo de la camara fotografica
+
+    Versionar los cambios añadidos
+cada vez que terminamos un feature, hacemos un commit, al final de cada feature, por ejemplo:
+Feature 1: Agregar los botones desplegables con las cajas de HTML y CSS
+Feature 2: Crear un formulario de contacto al final de la página.
+Feature 3: Poner un botón para cambiar la página a "Modo Oscuro".
+ 
+
+git branch -M main 
+
+    Renombrar la rama principal
+
+ 
+
+git remote add origin https://github.com/Matu-Dev-JS/2026_UTN_PWI_TN_MAR_JUE_PRIMER_REPOSITORIO.git
+
+    Añadir una direccion remota (Direccion de repositorio remoto) a nuestro repositorio local
+
+ 
+
+git remote -v
+
+    Verificar la direccion remota a la que esta conectado nuestro repositorio local
+
+ 
+
+git remote set-url origin <direccion del repositorio en la nube>
+
+    Modificar la direccion remota de nuestro repositorio en la nube
+
+ 
+
+ 
+
+Para actualizar un repositorio y subir otro commit
+
+    git add .
+
+    git commit -m 'mensaje'
+
+    git push
