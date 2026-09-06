@@ -1,6 +1,6 @@
 desde la terminal (CTRL J), 
 
-pwd es para saber la ubicación / ruta de donde estoy al momento.
+pwd es para saber la carpeta ubicación / ruta de donde estoy al momento. prtint working directory
 
 git funciona en una terminal, a traves de lineas de comandos
 
