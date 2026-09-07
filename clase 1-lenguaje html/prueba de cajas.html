@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba de cajas</title>
+</head>
+<body>
+    
+<div class="caja-html">
+    
+    <button>Saber HTML</button>
+
+    <!-- ✉️ Caja chica 1: El temario teórico -->
+    <div class="temario-curso-html">
+        <h3>Teoría:</h3>
+        <ul>
+            <li>Estructura básica y etiquetas comunes</li>
+            <li>Atributos y elementos de bloque/línea</li>
+            <li>HTML Semántico (nav, section, article)</li>
+        </ul>
+    </div>
+
+<!-- 📦 CAJA GRANDE (El contenedor principal de todo lo de HTML) --> 
+<div class="caja-html"> 
+  <button>Saber HTML</button> 
+  
+  <!-- ✉️ Caja chica 1: El temario teórico (Ahora semántico) --> 
+  <section class="temario-curso-html"> 
+    <h3>Teoría:</h3> 
+    <ul> 
+      <li>Estructura básica y etiquetas comunes</li> 
+      <li>Atributos y elementos de bloque/línea</li> 
+      <li>HTML Semántico (nav, section, article)</li> 
+    </ul> 
+  </section> 
+</div>
+
+
+
+<!-- 📦 CAJA GRANDE: El contenedor principal de toda la página -->
+<div id="inicio" class="contenedor-principal">
+
+  <!-- 🧭 NAV: El bloque que contiene el menú de navegación principal -->
+  <nav class="menu-navegacion">
+    
+    <!-- ✉️ DIV CLASS: Agrupa los enlaces para poder darles estilos juntos -->
+    <div class="grupo-enlaces">
+      <!-- 🔗 A HREF="#": Enlace que salta directamente a la sección con id="teoria" -->
+      <a href="#teoria">Ver Teoría</a>
+      <!-- 🔗 A HREF="#": Enlace que salta directamente a la sección con id="practica" -->
+      <a href="#practica">Ver Práctica</a>
+    </div>
+
+    <!-- 🔘 BUTTON: Botón interactivo para cambiar el modo de color (oscuro/claro) -->
+    <button class="btn-interactivo">Cambiar Modo</button>
+    
+    <!-- 🔘 BUTTON (NUEVO): Botón de acción principal para que el usuario entre a su cuenta -->
+    <button class="btn-acceso">Iniciar Sesión</button>
+
+  </nav>
+
+  <!-- 📜 SECTION ID: La sección de teoría que recibe el salto del primer enlace -->
+  <section id="teoria" class="bloque-contenido">
+    <h2>Módulo de Teoría</h2>
+    <p>Aquí va todo el contenido teórico del curso.</p>
+    <!-- 🔘 BUTTON (NUEVO): Un botón con enlace interno para volver al inicio de la página -->
+    <a href="#inicio"><button class="btn-volver">Volver arriba ↑</button></a>
+  </section>
+
+  <!-- 🛠️ SECTION ID: La sección de práctica que recibe el salto del segundo enlace -->
+  <section id="practica" class="bloque-contenido">
+    <h2>Módulo de Práctica</h2>
+    <p>Aquí van los ejercicios prácticos para resolver.</p>
+    <!-- 🔘 BUTTON (NUEVO): Otro botón idéntico para regresar rápidamente al menú -->
+    <a href="#inicio"><button class="btn-volver">Volver arriba ↑</button></a>
+  </section>
+
+</div>
+
+<div class="caja-html">
+    
+    <button>Saber HTML</button>
+
+    <!-- ✉️ Caja chica 1: El temario teórico -->
+    <div class="temario-curso-html">
+        <h3>Teoría:</h3>
+        <ul>
+            <li>Estructura básica y etiquetas comunes</li>
+            <li>Atributos y elementos de bloque/línea</li>
+            <li>HTML Semántico (nav, section, article)</li>
+        </ul>
+    </div>
+<!-- la lista con CSS se puede ocultar y se hace aparecer con un clic. Con html siempre estara visible.  -->
+
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+# 1. El asterisco (*) funciona como un comodín que le dice a Git: "No importa cómo se llame el archivo, si termina en .txt, ignóralo".
+*.txt
