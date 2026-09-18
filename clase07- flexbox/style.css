@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: #F5F5F6;
+}
+/* normalizar css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-plan-single{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-left: 20px;
+margin-top: 20px;
+border-radius: 20px;
+
+padding: 24px 24px 32px;
+width: 360px;
+height:400px;
+/*height: 1166.8px es el total*/ 
+background-color: #ffffff;
+gap: 0px;
+}
+
+.valor-off{
+    display: flex;
+    background-color: #F1EFFF;
+    width: 43.64px;
+    height: 16px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    
+}
+
+
+.off{
+color: #aa91f4;
+font-size: 12px;
+text-align: center;
+}
+
+
+.card-single{
+width: 262px;
+height: 86px;
+
+}
+
+
+.single{
+color: #222225;
+font-size: 18px;
+}
+
+
+.texto-primario-single{
+    color:#222225 ;
+    font-size: 14px;
+}
+
+.precio-single{
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+
+
+.precio-tachado{
+color: #DABFC2;
+font-size: 14px;
+text-decoration: line-through;
+}
+
+
+.precio-actual{
+color: #222225;
+font-size: 32px;
+}
+
+
+.elegir-plan{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0) ;
+color: #673de6;
+padding: 12px 48px;
+border-radius: 8px;
+border-color: #673de6;
+cursor: pointer;
+}
+
+
+.texto-secundario-single{
+color: #797980;
+font-size: 12px;
+
+}
+
+
+.secundario-single{
+color: #797980;
+font-size: 12px;
+}
+
+
