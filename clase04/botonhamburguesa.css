@@ -1,0 +1,47 @@
+!/* Espaciado del contenedor */
+.contenedor-iconos {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Separación entre botones */
+}
+
+/* Estilo unificado para ambos botones */
+.btn-icono {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quitar la flecha por defecto de details/summary */
+summary.btn-icono {
+  list-style: none;
+}
+summary.btn-icono::-webkit-details-marker {
+  display: none;
+}
+summary.btn-icono::marker {
+  display: none;
+  content: "";
+}
+
+/* Menú desplegable flotante */
+.sub-menu {
+  position: absolute;
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.sub-menu a {
+  display: block;
+  padding: 6px 0;
+  color: #333;
+  text-decoration: none;
+}  

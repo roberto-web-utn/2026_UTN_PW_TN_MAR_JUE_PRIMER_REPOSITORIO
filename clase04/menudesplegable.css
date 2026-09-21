@@ -1,0 +1,32 @@
+summary {
+display: flex;                  /* O display: inline-block; hace que todo el icono sea cliqueable */
+  align-items: center;
+  list-style: none;               /* Quita la flecha por defecto */
+  cursor: pointer;
+  font-size: 28px;
+  width: fit-content;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Estilos del menú desplegable */
+nav {
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 150px;
+}
+
+nav a {
+  display: block;
+  padding: 6px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
