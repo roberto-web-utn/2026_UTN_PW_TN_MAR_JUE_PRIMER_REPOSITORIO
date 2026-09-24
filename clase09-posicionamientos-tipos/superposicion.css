@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    font-family: 'DM Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*header*/
+div.header-expresa-tu-idea{
+width: 100%;
+    display: flex;
+    
+flex-direction: row;
+align-items: center; 
+  
+background-color: #FFFFFF;
+border-bottom: 4px solid rgb(239,239,239);
+margin: 0px;
+padding: 16px 0px  16px  0px;
+gap: 20px;
+}
+
+#inicio{
+color: black;
+font-size: 20px;
+justify-content: center;
+align-items: center;
+}
+
+div.header-navegador{
+
+    display: flex;
+    flex: 1;
+flex-direction: row;
+color: rgb(24, 24, 26);
+padding-right: 0px;
+
+margin: 0px;
+padding: 0px;
+}
+
+ul.header-flex-direction-row{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5px;
+    padding-right: 180px;
+}
+
+ul.cinco-columnas li{
+color: #14141A;
+font-size: 14px;
+}
+
+
+.header-precios{
+
+}
+
+.header-productos{
+
+}
+nav{
+    position: relative;
+}
+a.hombresito{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin: 0px;
+
+}
+div.padre-Agente-position-absolute{
+    position: relative;
+}
+button.Agente-position-absolute{
+    position: absolute;
+    top: 0px;
+    right: 80px;
+}
+
+summary.idioma-position-absolute{
+    position: relative;
+}
+.idioma-position-absolute{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+
+/*comienzo sección */
+
+section .expresa-tu-idea{
+
+}
+
+div.expresa-caja-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2.expresa-titulo{
+    font-size: 48px;
+    color: #18181A;
+    align-items: center;
+    text-align: center;
+    }
+
+span.expresa-subtitulo{
+    font-size: 48px;
+    text-align: center;
+    color: #6446e8;
+}
+
+form{
+display: flex;
+flex-direction: column;
+}
+
+label input{
+    display: block;
+    width: 764px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 18px;
+    border-color: #6446e8;
+    
+}
+
+button.superponer{
+    width: 40px;
+    height: 40px;
+    background-color: #673DE6;
+    border-color: #673DE6;
+    border-radius: 5px;
+}
+
+
+form{
+    position: relative;
+}
+button.superponer{
+position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+
+.bi.bi.bi-arrow-right-square-fill{
+    width: 24px;
+    height: 24px;
+    
+}
+
+
+
+
+
+
+
+    span.expresa-span{
+        
+font-size: 14px;
+color: #000000BF;
+
+text-align: center;
+
+}
