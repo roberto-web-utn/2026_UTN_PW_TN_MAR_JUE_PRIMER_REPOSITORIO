@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+header{
+    position: relative;
+    
+}
+div.barra-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 45.2px;
+    padding: 4px  0px;
+    position: fixed;
+    
+
+
+}
+
+img.logo-deepseek{
+    position: absolute;
+    top: 14px;
+    left: 72px;
+    z-index: 4;
+}
+
+span.logo-deepseek{
+    color: #4176E6;
+    font-size: 16px;
+    position: absolute;
+    top: 14px;
+    left: 102px;
+    z-index: 4;
+}
+button.get-app{
+    position: absolute;
+    font-size: 15px;
+    
+    top: 14px;
+    right: 184px;
+    width: 87px;
+    height: 24px;
+    padding: 4px   12px;
+    border-radius: 12px;
+    color: #1E232C; 
+    z-index: 4;
+
+}
+button.idioma-chino{
+    position: absolute;
+    font-size: 12px;
+    top: 14px;
+    right: 116px;
+    width: 48px;
+    height: 24px;
+    padding: 0px   6px;
+    border-radius: 12px;
+    color: #1E232C;
+    z-index: 4;
+
+}
+button.idioma-ingles{
+    position: absolute;
+    font-size: 12px;
+    top: 14px;
+    right: 72px;
+    width: 39px;
+    height: 24px;
+    border-radius: 12px;
+    color: #000000A6;
+    padding: 0px  12px;
+    z-index: 4;
+
+}
