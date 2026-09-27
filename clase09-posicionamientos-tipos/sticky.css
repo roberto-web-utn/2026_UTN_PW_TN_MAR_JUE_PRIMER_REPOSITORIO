@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --background-color: #1C1F25;
+    --texto-logo-color: #FFFFFF;
+    --texto-nav-color: #D2D2D3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    position: relative;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0px;
+    width: 90%;
+    max-width: 1100px;
+    font-family: "inter", sans-serif;
+    z-index: 200;
+}
+
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    flex: 1  1  200px;
+    min-width: min(100%, 200px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex: 1  1  200px;
+}
+
+.logo__icono{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.logo__texto{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--texto-logo-color);
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    flex: 5  1  900px;
+    min-width: min(100%, 500px);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    z-index: 200;
+    
+}
+
+a:hover{
+    color: var(--texto-logo-color);
+    transition: all 0.35s ease;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+.enlaces__ancla{
+    font-size: 16px;
+    color: var(--texto-nav-color);
+    text-decoration: none;
+
+}
+
+.nav__signin{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--texto-nav-color);
+}
+
+.temas{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--texto-nav-color);
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    font-style: italic;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
