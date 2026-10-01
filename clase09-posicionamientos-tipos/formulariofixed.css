@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --text-color-gris: #7a7a75;
+    --text-color:#1E232C;
+    --text-btn-deep-color:#4176E6;
+    --text-titulo-color:#152443;
+    --textarea-bg-color:#F2F6FA;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    overflow-y: auto; 
+}
+
+.contenedor{
+    
+    display: flex;
+    flex-direction: column;
+  max-width: 1080px;
+  width: 90%;       
+  margin: 50px auto;    
+  padding: 64px 24px 0 24px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #ffffff;
+
+  
+}
+
+.contenedor__presentacion{
+    display: flex;
+    flex-direction: column;  
+    max-width: 560px;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contenedor__presentacion-descripcion{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+    font-family: var(--font-inter);
+    font-size: 15px;
+    color: var(--text-color-gris);
+    
+}
+a:hover{
+    
+    font-weight: 400; 
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+a{
+    text-decoration: none;
+}
+
+.contenedor__presentacion-titulo{
+    font-family: var(--font-montserrat);
+    font-size: 50px;
+    color: var(--text-titulo-color);
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+}
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 10px 10px;
+    border: 0.2px solid #7a7a75;
+    border-radius: 6px;
+    max-width: 880px;
+    width: 100%;
+
+}
+
+.consulta__formulario{
+
+}
+
+.consulta__label{
+
+}
+
+.consulta__textarea{
+    width: 100%;
+    background-color: #F2F6FA;
+    border: none;
+    
+}
+ 
+.consulta__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.consulta__btn-submit{
+    width: 30px;
+    height: 30px;
+    background-color: #4176E6;
+    border-radius: 50%;
+
+}
+
+.fondo{
+    
+    max-width: 700px;     /* Ancho máximo deseado para las columnas */
+    width: 90%;           /* Para que sea responsive en celulares */
+    margin: 0 auto;       /* CENTRA la caja horizontalmente en la pantalla */
+    text-align: center;   /* CENTRA las líneas de texto dentro de los párrafos */
+    padding: 40px 0;      /* Espaciado arriba y abajo */
+    color: #666;
+}
