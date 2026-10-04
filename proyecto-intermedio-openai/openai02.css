@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-main: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --bg-color: #ffffff;
+  --bg-colornegro: #000000;
+  --color-text: #000000;
+  --color-btnprueba: #f5f5f5;
+  --color-textoblanco: #ffffff; 
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0; 
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px clamp(16px, 4vw, 48px);
+  box-sizing: border-box;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.nav__listas{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav__listas--centro{
+  gap: 32px; 
+  /*flex-wrap: wrap;*/
+}
+
+.nav__listas--secundario{
+  gap: 12px; 
+  justify-content: flex-end;
+}
+
+
+.nav__item{
+  display: flex;
+  align-items: center;
+}
+
+.nav__enlace,
+.nav__titulo{
+  font-family: var(--font-main);
+  font-size: 13px;
+  color: var(--color-text);
+  transition: opacity 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav__enlace:not(.nav__enlace--business):not(.nav__enlace--logo)
+.nav__listas:hover .nav__enlace:hover,
+.nav__listas:hover .nav__titulo:hover {
+  opacity: 0.4;
+}
+
+/* 3. Ítem enfocado: El elemento exacto sobre el que está el mouse vuelve a negro (1) */
+.nav__listas .nav__enlace:hover,
+.nav__listas .nav__titulo:hover {
+  opacity: 1;
+}
+
+.nav__enlace--business{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav__enlace--precios{
+  font-size: 13px;
+
+}
+
+.nav__boton{
+  width: 16px;
+  height: 16px;
+  background: none;       
+  border: none;           
+  outline: none;          
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav__boton-icono{
+  list-style: none;
+}
+
+.nav__accion{
+  display: flex;
+
+}
+
+.nav__listas--secundario{
+
+}
+
+.nav__desplegable{
+  /*display: flex;
+  background-color: var(--color-btnprueba);
+  padding: 8px 16px;
+  /*width: 160px;
+  height: 36px;
+  display: flex;*/
+  /*justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  flex-direction: column;
+  position: relative;*/
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+
+}
+
+.nav__titulo-resumen{
+  font-size: 14px;
+  list-style: none; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav__titulo-resumen::-webkit-details-marker {
+  display: none;
+}
+
+
+
+.nav__item.nav__item--items{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__desplegable{
+  position: relative;
+  display: inline-block;
+  
+}
+
+.nav__subenlace{
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__subenlaces{
+  background-color: var(--color-btnprueba);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  align-items: center;
+  min-width: 160px;  
+  width: max-content;
+  /*width: 160px;*/
+  margin-top: 15px;
+  font-size: 13px;
+  padding-bottom: 16px;
+  padding-top: 16px; 
+}
+
+.nav__enlace--hablarexperto{
+  padding: 8px 16px;
+  /*width: 180px;
+  height: 36px;*/
+  color: var(--color-textoblanco);
+  background-color: var(--bg-colornegro);
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 18px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.nav__titulo-resumen{
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.nav__icono {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.nav ul,
+.nav__listas,
+.nav__listas--centro,
+.nav__listas--principal,
+.nav__listas--secundario,
+.nav__listas--colapsadas {
+  list-style: none;
+  margin: 0;
+  padding: 0  16px  0  16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__enlace--business{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.nav__enlace--precios{
+  font-size: 13px;
+
+}
+
+
+
+.nav__enlace,
+.nav__titulo,
+.nav__titulo-resumen {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav__enlace:hover,
+.nav__titulo:hover,
+.nav__titulo-resumen:hover {
+  opacity: 0.7;
+}
+
+.nav__icono {
+  height: 20px;
+  display: block;
+}
+
+.nav__boton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.nav__boton-icono {
+  width: 18px;
+  height: 18px;
+}*/
+
+/* Desplegable nativo */
+.nav__desplegable {
+  position: relative;
+}
+
+.nav__subenlaces {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 10;
+}
+
+.nav__subenlace {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.nav__subenlace:hover {
+  background-color: #f5f5f5;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
+
+/* Botón libro / Menú */
+.nav__boton-libro {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav__colapsable {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e5e5e5;
+  z-index: 100;
+}
+
+.nav__listas--colapsadas {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 16px;
+}
+
+/* ==========================================
+   2. ESTADO 1: MÓVIL (< 768px)
+   ========================================== */
+/* Solo visibles: Logo/Business, Lupa y Botón Libro */
+.nav__centro,
+.nav__accion {
+  display: none;
+}
+
+.nav__item--solo-movil {
+  display: block;
+}
+
+/* ==========================================
+   3. ESTADO 2: TABLET / LAPTOP (768px a 1280px)
+   ========================================== */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .nav__centro {
+    display: none; /* Se mantiene oculto el menú central */
+  }
+
+  .nav__preguntar {
+    order: 2;
+  } 
+
+  .nav__accion {
+    display: flex; /* Se muestran Prueba OpenAI y Hablar con un experto */
+    order: 3;
+  }
+
+  
+
+  .nav__menu-libro {
+    display: block; /* Se mantiene visible el botón de desplegable */
+    order: 4;
+  }
+
+  .nav__item--solo-movil {
+    display: none; /* Se ocultan dentro del desplegable para evitar duplicación */
+  }
+}
+
+/* ==========================================
+   4. ESTADO 3: ESCRITORIO ANCHO (> 1262px)
+   ========================================== */
+@media (min-width: 1263px) {
+  .nav__izquierda {
+    order: 1;
+  }
+
+  .nav__centro {
+    display: flex; /* Aparece todo el menú central */
+    order: 2;
+  }
+
+  .nav__preguntar {
+    order: 3;
+    
+  }
+
+  .nav__accion {
+    display: flex;
+    order: 4;
+    margin-left: auto; /* Empuja acciones y el libro hacia la derecha */
+  }
+
+  .nav__menu-libro {
+    display: none; /* Se oculta completamente el libro */
+  }
+}

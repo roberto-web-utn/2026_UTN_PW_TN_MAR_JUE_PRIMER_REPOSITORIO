@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------------------------------------*/
+/*El comportamiento de la barra de navegación según el ancho:
+
+Más de 1262px (Pantalla Grande):
+
+Todo visible horizontalmente en la barra.
+
+Sin ícono de libro.
+------------------------------------------------------------------------------------------------
+
+De 768px hasta 1262px (Tablet / Laptop chica):
+
+Visible en la barra: Logo + Business | Lupa | Prueba OpenAI | Hablar con un experto | Ícono Libro.
+
+Dentro del libro: Se guardan únicamente los enlaces (¿Por qué OpenAI?, Productos, Soluciones, Recursos, Clientes, Precios).
+
+-------------------------------------------------------------------------------------------------
+
+Menos de 768px (Celular):
+
+Visible en la barra: Logo + Business | Lupa | Ícono Libro.
+
+Dentro del libro: Se guarda absolutamente todo el resto (¿Por qué OpenAI?, Productos, etc., más Prueba OpenAI y Hablar con un experto).
+
+--------------------------------------------------------------------------------------------------
+/*Paso 1: Pensar el HTML "Base" (Todo en un solo lugar)
+Antes de ocultar cosas con CSS, tenés que armar un HTML que contenga todos los elementos agrupados por su tipo, para que después el CSS los pueda prender o apagar fácilmente:
+
+Grupo Izquierda (Siempre visible): Logo + Business.
+
+Grupo Acciones (Lupa, Prueba OpenAI, Hablar con un experto): Lo agrupás en un div contenedor propio.
+
+Grupo Menú Flotante (Ícono del Libro + Lista de Enlaces): Un contenedor que guarda los 6 enlaces principales (¿Por qué OpenAI?, Productos, etc.), y también una copia de Prueba OpenAI y Hablar con un experto marcada para móviles.
+
+Paso 2: Construir de a un estado (De menor a mayor)
+Arrancá programando de a un tamaño por vez en tu CSS:
+
+Estado 1: Móvil (Menos de 768px)
+
+Objetivo: Ocultás el menú horizontal y las acciones directas (display: none). Solo quedan visibles Logo, Business, Lupa y Libro.
+
+Verificá en la pantalla que en celular quede limpia la barra.
+
+Estado 2: Tablet / Laptop chica (De 768px a 1262px)
+
+Objetivo: Creás la primera Media Query (@media (min-width: 768px)).
+
+Hacés aparecer las acciones (Prueba OpenAI y Hablar con un experto) en la barra superior.
+
+Ocultás esas dos acciones de adentro del desplegable del libro para que no queden repetidas.
+
+Verificá que el libro siga estando al extremo derecho y solo contenga los 6 enlaces principales.
+
+Estado 3: Escritorio Grande (Más de 1262px)
+
+Objetivo: Creás la segunda Media Query (@media (min-width: 1262px)).
+
+Hacés aparecer la lista con los 6 enlaces principales directamente en la barra.
+
+Ocultás por completo el ícono del libro (display: none).*/
+
+/* ==========================================
+   1. MÓVIL (Menos de 768px)
+   ========================================== */
+
+/* Se oculta la lista de enlaces principal */
+.nav__listas--principal {
+  display: none;
+}
+
+/* En celular, 'Prueba OpenAI' y 'Hablar con un experto' se ocultan de la barra */
+.nav__desplegable,
+.nav__enlace--hablarexperto {
+  display: none;
+}
+
+/* El ícono del libro está visible */
+.nav__boton-libro {
+  display: flex;
+  cursor: pointer;
+}
+
+/* ==========================================
+   2. TABLET / LAPTOP CHICA (768px a 1262px)
+   ========================================== */
+@media (min-width: 768px) {
+  /* Hacemos aparecer 'Prueba OpenAI' y 'Hablar con un experto' en la barra */
+  .nav__desplegable {
+    display: inline-flex;
+  }
+  
+  .nav__enlace--hablarexperto {
+    display: inline-flex;
+  }
+
+  /* La lista de enlaces principal sigue dentro del libro */
+  .nav__listas--principal {
+    display: none;
+  }
+
+  /* El ícono del libro se mantiene visible */
+  .nav__boton-libro {
+    display: flex;
+  }
+}
+
+/* ==========================================
+   3. ESCRITORIO GRANDE (Más de 1262px)
+   ========================================== */
+@media (min-width: 1262px) {
+  /* Se despliega la lista principal completa en la barra */
+  .nav__listas--principal {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  /* Desaparece el ícono del libro por completo */
+  .nav__boton-libro,
+  .nav__colapsable {
+    display: none !important;
+  }
+}
+
+
+
+
+

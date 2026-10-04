@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-main: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --bg-color: #ffffff;
+  --bg-colornegro: #000000;
+  --color-text: #000000;
+  --color-btnprueba: #f5f5f5;
+  --color-textoblanco: #ffffff; 
+}
+header{
+    gap: 112px 0 0 0;
+    padding-bottom: 112px;
+}
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0; 
+}
+
+.hero-investiga{
+    display: flex;
+    /*flex-direction: row; lo armo para mobile con column*/
+    
+    justify-content: space-between;/* Empuja las columnas hacia los extremos */
+    align-items: flex-end; /* Alinea ambas columnas por la parte superior */
+    max-width: 1400px;
+    width: 100%;
+    /*gap: 48px; *//* Espacio horizontal de separación entre el texto y la imagen */
+    gap: 32px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 20px); /* Único margen lateral externo que alineará todo tu sitio */
+    box-sizing: border-box;
+
+}
+
+.hero-investiga__contenido{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    /*width: 100%;
+    max-width: 680px;*/
+    
+    flex: 1 1 50%; /* Ocupa hasta el 50% de la pantalla */
+  min-width: 0;   /* Evita que el texto desborde el contenedor Flex */
+}
+   
+    
+   /* align-items: flex-start; 
+    width: 100%;
+    gap: 48px; n 
+    padding: 0 clamp(16px, 4vw, 48px); Único margen lateral externo que alineará todo tu sitio 
+     box-sizing: border-box;*/
+
+    
+
+
+.hero-investiga__figure{
+  /*margin-right: clamp(16px, 4vw, 48px);
+  width: 100%;
+  max-width: 650px; Cambia este valor según qué tan pequeña quieras la imagen 
+  flex-shrink: 0;*/
+  width: 100%;
+  margin: 0;
+  
+  max-width: 680px; /* Ancho máximo en pantalla grande */
+     /* Evita que se aplaste de más en desktop */
+    
+  flex: 1 1 50%; /* Ocupa la otra mitad de la pantalla */
+
+  width: 100%;
+    max-width: 680px;
+    margin: 0;
+    flex: 1 1 55%;
+    align-self: flex-start; /* Clave: fija la parte superior del figure al techo del contenedor */
+    overflow: hidden;       /* Oculta lo que sobre por abajo si la caja se achica */
+}
+  
+
+
+
+
+
+.hero-investiga__descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-investiga__textp{
+    font-size: 14px;
+    color: var(--color-text);
+    margin: 0px  0px  16px;
+    font-weight: 500;
+}
+
+.hero-investiga__titulo{
+    font-size: clamp(38px, 4.5vw, 59px);
+    font-weight: 345;
+    letter-spacing: -0.025em;
+    
+    color: var(--color-text);
+    line-height: 1.08; /* Reduce el espacio vertical entre líneas */
+}
+
+.hero-investiga__texto--size {
+  font-size: clamp(15px, 1.2vw, 17px); /* Mínimo 15px, máximo 17px */
+}
+
+
+
+.hero-investiga__acciones{
+    /*display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin: 32px 0  0;
+    gap: 16px;*/
+   
+
+    display: flex;
+    gap: 12px;
+    margin-top: 32px; /* Mantiene la distancia exacta constante con el párrafo */
+
+}
+
+.hero-investiga__pruebaChatGPT,
+.hero-investiga__contacto{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px  20px;
+    text-decoration: none;
+    white-space: nowrap; 
+
+}
+
+.hero-investiga__pruebaChatGPT{
+    display: flex;
+    background-color: var(--bg-colornegro);
+    color: var(--color-textoblanco);
+    
+    height: 40px;
+    border-radius: 18px;
+}
+
+.hero-investiga__contacto{
+    display: flex;
+    background-color: var(--color-btnprueba);
+    color: var(--color-text);
+    
+    height: 40px;
+    border-radius: 18px;
+}
+.hero-investiga__img{
+    width: 100%;
+  height: auto;
+  display: block;
+  
+  object-fit: contain; /* Evita que la imagen se recorte si cambia el contenedor */
+  
+}
+
+
+
+
+
+/* ==========================================
+   1. ESTILOS BASE MOBILE (< 782px)
+   Aplica por defecto desde 300px en adelante
+   ========================================== */
+
+.hero-investiga {
+  display: flex;
+  flex-direction: column; /* Apila el texto arriba y la figura abajo */
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 clamp(16px, 4vw, 48px);
+  box-sizing: border-box;
+  gap: 32px;
+}
+
+.hero-investiga__contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-investiga__titulo {
+  font-size: clamp(32px, 8vw, 36px);
+  font-weight: 340;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+.hero-investiga__acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los botones en pantalla chica */
+  width: 100%;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.hero-investiga__pruebaChatGPT,
+.hero-investiga__contacto {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  justify-content: center;
+}
+
+.hero-investiga__figure {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+
+/* ==========================================
+   2. DESKTOP / TABLETS ANCHAS (>= 782px)
+   Pasa la figura a la DERECHA
+   ========================================== */
+
+@media (min-width: 782px) {
+  .hero-investiga {
+    flex-direction: row; /* Coloca la figura al lado del texto */
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: clamp(16px, 3vw, 48px);
+  }
+
+  .hero-investiga__contenido {
+    flex: 1 1 50%;
+    max-width: 680px;
+  }
+
+  .hero-investiga__titulo {
+    font-size: 60px;
+  }
+
+  .hero-investiga__figure {
+    flex: 1 1 45%;
+    max-width: 650px;
+    min-width: 280px;
+  }
+}
+
+
+/* ==========================================
+   3. PANTALLAS GRANDES (>= 1257px)
+   Alineación de botones horizontal
+   ========================================== */
+
+@media (min-width: 1257px) {
+  .hero-investiga__acciones {
+    flex-direction: row; /* Los botones vuelven a ponerse lado a lado en pantallas anchas */
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .hero-investiga__pruebaChatGPT,
+  .hero-investiga__contacto {
+    width: auto;
+    max-width: none;
+  }
+}
+
+
+
+
+
+
+
++
