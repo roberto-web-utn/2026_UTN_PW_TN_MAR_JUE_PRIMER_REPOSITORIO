@@ -173,6 +173,9 @@ img, svg {
   
 }
 
+.flechadiagonal{
+  filter: brightness(0) invert(1);
+}
 
 
 
