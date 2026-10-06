@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-main: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --bg-color: #ffffff;
+  --bg-colornegro: #000000;
+  --color-text: #000000;
+  --color-btnprueba: #f5f5f5;
+  --color-textoblanco: #ffffff; 
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+    flex: 1;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+} 
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px  32px;
+    margin-top: auto;
+
+}
+
+.footer__redessociales{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+
+
+}
+
+.footer__lista{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    list-style-type: none;
+
+}
+
+.footer__item{
+    text-decoration: none;
+
+}
+
+.footer__X,
+.footer__youtube,
+.footer__linkedin,
+.footer__github,
+.footer__instagram,
+.footer__tiktok,
+.footer__discord{
+  color: #ffffff;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer__derechos-cookies{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.footer__derechos{
+    margin: 0px;
+    color: var(--color-text);
+    font-size: 13px;
+
+}
+
+.footer__cookies{
+    display: flex;
+    margin: 0px;
+    margin-left: 4px;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 13px;
+
+}
+
+.footer__idiomas{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 0px 20px 0px 18px;
+}
+
+.footer__idioma{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer__icono-global{
+    width: 16px;
+    height: 16px;
+}
+
+.footer__idioma--paises{
+    font-size: 16px;
+
+}
+
+
+/* Para pantallas de 796px de ancho o menos (celulares/tablets) */
+@media (max-width: 796px){
+    .footer__derechos-cookies{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Para pantallas de 717px de ancho o menos (celulares/tablets) */
+@media (max-width: 717px){
+    .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 24px 32p
+    margin-top: auto;
+    gap: 32px;
+    .footer__derechos-cookies{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+}
+}
