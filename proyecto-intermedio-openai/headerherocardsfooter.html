@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones para la investigación | Openai</title>
+
+<link rel="stylesheet" href="headerherocardsfooter.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+
+<!-- 1. bloque izquierda siempre visible (mobile)--> 
+        <div class="nav__izquierda">
+            <ul class="nav__listas nav__listas--principal"> 
+                <li class="nav__item nav__item--logo"><a class="nav__enlace" href="https://openai.com/es-419/"><img class="nav__icono" alt="logo-openai" src="./assets/imagen/openai.svg"> </a></li> <!--es el logo-->
+                <li class="nav__item"><a class="nav__enlace nav__enlace--business" href="https://openai.com/es-419/business/">Business</a></li>
+            </ul>
+        </div>
+        
+<!-- 2. bloque centro desaparece en modo tablet/laptop y en modo mobile-->      
+        <div class="nav__centro">
+            <ul class="nav__listas nav__listas--centro">    
+                <li class="nav__item"><span class="nav__titulo">¿Por qué OpenAI?</span></li>
+                <li class="nav__item"><span class="nav__titulo">Productos</span></li>
+                <li class="nav__item"><span class="nav__titulo">Soluciones</span></li>
+                <li class="nav__item"><span class="nav__titulo">Recursos</span></li>
+                <li class="nav__item"><a class="nav__enlace nav__enlace--clientes" href="https://openai.com/es-419/business/customer-stories/">Clientes</a></li>
+                <li class="nav__item"><a class="nav__enlace nav__enlace--precios" href="https://openai.com/es-419/business/pricing/">Precios</a></li>
+            </ul>
+        </div>
+
+<!-- 3. bloque lupa  siempre visible (mobile)-->
+        <div class="nav__preguntar">
+            <ul class="nav__listas nav__listas--preguntar">
+                <li class="nav__item nav__item--button"><button class="nav__boton" type="button" aria-label="Preguntar"><img class="nav__boton-icono" src="./assets/imagen/search.svg" alt="preguntar"></button></li>
+            </ul>
+        </div>
+        
+<!-- 4. bloque derecha desaparece en modo mobile. No en modo tablet/laptop-->
+        
+        <div class="nav__accion">
+          <ul class="nav__listas nav__listas--secundario">
+                <li class="nav__item nav__item--items"> 
+                    <details class="nav__desplegable">
+                        <summary class="nav__titulo-resumen">Prueba OpenAI</summary>
+                            <div class="nav__subenlaces">
+                                <a class="nav__subenlace" href="https://openai.com/es-419/chatgpt-work/">ChatGPT Work</a>
+                                <a class="nav__subenlace" href="https://openai.com/es-419/codex/">Codex</a>
+                                <a class="nav__subenlace" href="https://openai.com/es-419/api/">Plataforma API</a> 
+                            </div>     
+                    </details>
+                </li>
+                <li class="nav__item"><a class="nav__enlace nav__enlace--hablarexperto" href="https://openai.com/es-419/contact-sales/">Hablar con un experto</a></li>
+          </ul>
+        </div>
+    
+    
+
+
+<!-- 5. agregado de boton libro al final del nav para columna desplegable-->  
+        <details class="nav__menu-libro">
+            <summary class="nav__boton-libro" title="Menú">
+        <!-- Ícono SVG del libro -->
+              <svg class="nav__icono-libro" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </summary>
+
+          <div class="nav__colapsable">
+            <ul class="nav__listas nav__listas--colapsadas">
+            <!-- Los 6 enlaces principales que se abren desde el libro -->
+                <li class="nav__item"><span class="nav__titulo">¿Por qué OpenAI?</span></li>
+                <li class="nav__item"><span class="nav__titulo">Productos</span></li>
+                <li class="nav__item"><span class="nav__titulo">Soluciones</span></li>
+                <li class="nav__item"><span class="nav__titulo">Recursos</span></li>
+                <li class="nav__item"><a class="nav__enlace nav__enlace--clientes" href="https://openai.com/es-419/business/customer-stories/">Clientes</a></li>
+                <li class="nav__item"><a class="nav__enlace nav__enlace--precios" href="https://openai.com/es-419/business/pricing/">Precios</a></li>
+            
+            <!-- Copia de Prueba y Hablar (Visibles dentro del libro SOLO en celular < 768px) -->
+                <li class="nav__item nav__item--solo-movil">
+                  <details class="nav__desplegable">
+                    <summary class="nav__titulo-resumen">Prueba OpenAI</summary>
+                      <div class="nav__subenlaces">
+                        <a class="nav__subenlace" href="https://openai.com/es-419/chatgpt-work/">ChatGPT Work</a>
+                        <a class="nav__subenlace" href="https://openai.com/es-419/codex/">Codex</a>
+                        <a class="nav__subenlace" href="https://openai.com/es-419/api/">Plataforma API</a> 
+                    </div>     
+                 </details>
+                </li>
+                <li class="nav__item nav__item--solo-movil">
+                <a class="nav__enlace nav__enlace--hablarexperto" href="https://openai.com/es-419/contact-sales/">Hablar con un experto</a>
+                </li>
+            </ul>
+          </div>
+        </details>
+
+  </nav>           
+</header>
+   
+<!-- viene del file hero -->
+ <main>
+        <section class="hero-investiga">
+            <div class="hero-investiga__contenido">
+                <div class="hero-investiga__descripcion">
+                    <p class="hero-investiga__textp">OpenAI para investigación</p>
+                    <h1 class="hero-investiga__titulo"><strong>Haz una investigación a nivel de experto con un solo mensaje</strong></h1>
+                    <p class="hero-investiga__texto--size">Reúne, analiza y sintetiza información más rápido con herramientas de IA que generan informes estructurados y con citas en minutos, no en días.</p>
+                </div>
+                <div class="hero-investiga__acciones">
+                    <a class="hero-investiga__pruebaChatGPT" href="https://chatgpt.com/team-sign-up?openaicom_referred=true">Probar ChatGPT Business<img class="flechadiagonal" src="./assets/imagen/arrow-up-right.svg" alt="Probar ChatGPT Business"></a>
+                    <a class="hero-investiga__contacto" href="https://openai.com/es-ES/contact-sales/">Comunicate con el Departamento de Ventas</a>
+                </div>
+
+            </div>
+            <figure class="hero-investiga__figure">
+                <img class="hero-investiga__img" src="./assets/imagen/solution-research-hero.png" alt="captura de pantalla analizando comentarios">
+            </figure>
+        </section>
+
+
+
+
+<!-- VIENE DEL CARDSFOOTER -->
+<section class="soluciones">
+        <div class="soluciones__encabezado">
+            <h2 class="soluciones__titulo">Encuentra la solución adecuada</h2>
+            <p class="soluciones__texto">Compara productos que respaldan la investigación en todos los niveles,<br> desde la exploración rápida hasta la elaboración de informes detallados.</p>
+        </div>
+        <div class="soluciones__cards">
+            <div class="soluciones__card">
+                <img class="soluciones__imagen" src="./assets/imagen/solution-research-thumbnail-01.webp" alt="ChatGPT-Tu asistente de investigación">
+                <div class="soluciones__descripcion">
+                    <h3 class="soluciones__descripcion--titulo">ChatGPT</h3>
+                    <p class="soluciones__descripcion--subtitulo">Tu asistente de investigación en el chat.</p>
+                    <ul class="soluciones__descripcion--lista">
+                        <li class="soluciones__descripcion--item">Efectúa revisiones de literatura, resume artículos o sintetiza ideas de archivos PDF y datos cargados.</li>
+                        <li class="soluciones__descripcion--item">Referencia las fuentes directamente y exporta notas estructuradas al instante.</li>
+                    </ul> 
+                </div>
+                <a class="soluciones__enlace" href="https://chatgpt.com/team-sign-up?openaicom_referred=true">Probar ChatGPT Business <img class="flechadiagonal" src="./assets/imagen/arrow-up-right.svg" alt="Probar ChatGPT Business"></a>
+            </div>
+        
+
+
+
+
+
+
+
+
+        
+        
+            <div class="soluciones__card">
+                <img class="soluciones__imagen" src="./assets/imagen/solution-research-thumbnail-02.webp" alt="Investigación avanzada para preguntas complejas en ChatGPT">
+                <div class="soluciones__descripcion">
+                    <h3 class="soluciones__descripcion--titulo">Investigación a fondo</h3>
+                    <p class="soluciones__descripcion--subtitulo">Investigación avanzada para preguntas complejas en ChatGPT.</p>
+                    <ul class="soluciones__descripcion--lista">
+                        <li class="soluciones__descripcion--item">Busca y analiza información de cientos de fuentes en línea. </li>
+                        <li class="soluciones__descripcion--item">Usa el razonamiento de varios pasos para comparar y validar las conclusiones.</li>
+                        <li class="soluciones__descripcion--item">Genera informes detallados respaldados por citas.</li>
+                    </ul> 
+                </div>
+                <a class="soluciones__enlace" href="https://chatgpt.com/?hints=research&openaicom-did=a6d5a27b-ffc9-4313-b308-40d7d1c1e81e&openaicom_referred=true">Usa la investigación a fondo </a>
+            </div>
+        
+
+
+        
+        
+            <div class="soluciones__card">
+                <img class="soluciones__imagen" src="./assets/imagen/solution-research-thumbnail-03.webp" alt="Respuestas con citas en tiempo real.">
+                <div class="soluciones__descripcion">
+                    <h3 class="soluciones__descripcion--titulo">Recuperación de conocimiento</h3>
+                    <p class="soluciones__descripcion--subtitulo">Respuestas con citas en tiempo real.</p>
+                    <ul class="soluciones__descripcion--lista">
+                        <li class="soluciones__descripcion--item">Crea asistentes de conocimiento impulsados por los datos y el contenido de tu empresa.</li>
+                        <li class="soluciones__descripcion--item">Ofrece respuestas transparentes con referencias claras a las fuentes.</li>
+                    </ul> 
+                </div>
+                <a class="soluciones__enlace" href="https://chatgpt.com/team-sign-up?openaicom_referred=true">Obtener más información</a>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <nav class="footer__redessociales">
+                <ul class="footer__lista">
+                    <li class="footer__item"><img class="footer__X" alt="X (anteriormente Twitter)" src="./assets/imagen/twitter-x.svg"></li>
+                    <li class="footer__item"><img class="footer__youtube" alt="youtube" src="./assets/imagen/youtube.svg"></li>
+                    <li class="footer__item"><img class="footer__linkedin" alt="linkedin" src="./assets/imagen/linkedin.svg"></li>
+                    <li class="footer__item"><img class="footer__github" src="./assets/imagen/github.svg" alt="github"></li>
+                    <li class="footer__item"><img class="footer__instagram" src="./assets/imagen/instagram.svg" alt="instagram"></li>
+                    <li class="footer__item"><img class="footer__tiktok" src="./assets/imagen/tiktok.svg" alt="tiktok"></li>
+                    <li class="footer__item"><img class="footer__discord" src="./assets/imagen/discord.svg" alt="discord"></li>
+                </ul>
+            </nav>
+
+            <div class="footer__derechos-cookies">
+                <p class="footer__derechos">OpenAI © 2015–2026   </p>      
+                <a class="footer__cookies" href="https://openai.com/es-419/solutions/use-case/research/#manage-cookies">   Gestionar cookies</a>
+            </div>
+            <details class="footer__idiomas">
+                <summary class="footer__idioma"><img class="footer__icono-global" src="./assets/imagen/globe2.svg" alt="idioma-lenguaje"   >Español<span class="footer__idioma--paises"   >Latinoamérica</span></summary>
+                    <ul class="footer__idiomas-lista">
+                        <li class="footer__idiomas-item"><a href="#" class="footer__idiomas-enlace">English</a></li>
+                        <li class="footer__idiomas-item"><a href="#" class="footer__idiomas-enlace">Português</a></li>
+                    </ul>
+            </details>
+
+        </div>
+    </footer>
+
+
+
+</main>
+
+
+</body>
+</html>
